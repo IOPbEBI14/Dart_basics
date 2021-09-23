@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "dart_basics",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.10"
+    }
+  ],
+  "generated": "2021-09-10T18:57:32.511427Z",
+  "generator": "pub",
+  "generatorVersion": "2.14.1"
+}
