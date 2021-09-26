@@ -1,14 +1,14 @@
-class My_Math {
-  int find_nod(int par1, int par2) {
+class MyMath {
+  int findNod(int par1, int par2) {
     int v1 = par2 > par1 ? par2 : par1, v2 = par2 > par1 ? par1 : par2;
-    return v2 != 0 ? find_nod(v2, v1 % v2) : v1;
+    return v2 != 0 ? findNod(v2, v1 % v2) : v1;
   }
 
-  int find_nok(int par1, int par2) {
-    return par1 ~/ find_nod(par1, par2) * par2;
+  int findNok(int par1, int par2) {
+    return par1 ~/ findNod(par1, par2) * par2;
   }
 
-  String dec_2_bin(int par) {
+  String decToBin(int par) {
     String result = (par % 2).toString();
     int v = par ~/ 2;
     while (v != 0) {
@@ -18,7 +18,7 @@ class My_Math {
     return result;
   }
 
-  int bin_2_dec(String par) {
+  int binToDec(String par) {
     int tmp = 0;
     try {
       for (int i = 0; i < par.length; i++) {

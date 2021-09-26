@@ -11,18 +11,18 @@ enum Colors {
 }
 
 void main() {
-  My_Math no = My_Math();
+  MyMath no = MyMath();
   StringModifier str = StringModifier();
 
   // задача №1 - НОД и НОК
-  print(no.find_nod(25, 45));
-  print(no.find_nok(25, 45));
+  print(no.findNod(25, 45));
+  print(no.findNok(25, 45));
   // задача №2 - преобразование
-  for (int i = 0; i < 17; i++) print('$i - ${no.dec_2_bin(i)}');
+  for (int i = 0; i < 17; i++) print('$i - ${no.decToBin(i)}');
   // обратно
-  print(no.bin_2_dec('000000001'));
+  print(no.binToDec('000000001'));
   // найти числа в строке и вернуть список
-  print(str.get_numbers_list('ffdfd 1 2 3 dadfdasf 3 fsdfsd 4 5 ello5'));
+  print(str.getNumbersList('ffdfd 1 2 3 dadfdasf 3 fsdfsd 4 5 ello5'));
   // количество слов в списке
   print(str.getWordsQuantity(["Алла", "Игорь", "Вика", "Алла", "Игорь"]));
   // найти строковые значения чисел и вернуть список int

@@ -28,7 +28,7 @@ extension IntX on String {
 }
 
 class StringModifier {
-  List<int> get_numbers_list(String par) {
+  List<int> getNumbersList(String par) {
     List<int> tmp = List();
     int pos = 0;
     int posTo;
