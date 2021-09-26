@@ -62,8 +62,8 @@ class StringModifier {
     return tmp;
   }
 
-  List<int> getStringNumbers(List<String> par) {
-    List<int> tmp = List();
+  Set<int> getStringNumbers(List<String> par) {
+    Set<int> tmp = Set();
     par.forEach((element) {
       if (element.intByString() != null) tmp.add(element.intByString());
     });

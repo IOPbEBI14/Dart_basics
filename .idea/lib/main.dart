@@ -1,6 +1,7 @@
 import 'math_file.dart';
 import 'string_file.dart';
 import 'user.dart';
+
 enum Colors {
   red,
   green,
@@ -9,16 +10,15 @@ enum Colors {
   black,
 }
 
-void main(){
-  My_Math no=My_Math();
-  StringModifier str=StringModifier();
+void main() {
+  My_Math no = My_Math();
+  StringModifier str = StringModifier();
 
   // задача №1 - НОД и НОК
   print(no.find_nod(25, 45));
   print(no.find_nok(25, 45));
   // задача №2 - преобразование
-  for (int i = 0; i < 17; i++)
-    print('$i - ${no.dec_2_bin(i)}');
+  for (int i = 0; i < 17; i++) print('$i - ${no.dec_2_bin(i)}');
   // обратно
   print(no.bin_2_dec('000000001'));
   // найти числа в строке и вернуть список
@@ -26,10 +26,11 @@ void main(){
   // количество слов в списке
   print(str.getWordsQuantity(["Алла", "Игорь", "Вика", "Алла", "Игорь"]));
   // найти строковые значения чисел и вернуть список int
-  print(str.getStringNumbers(["one", "two", "three", "cat", "dog", "five"]));
+  print(str
+      .getStringNumbers(["one", "two", "three", "cat", "dog", "five", "two"]));
   // трехмерное пространство
   print(Point.oneVector().distanceTo(Point.zeroPoint()));
-  print(Point(5,3,10).distanceTo(Point(-3,7,1)));
+  print(Point(5, 3, 10).distanceTo(Point(-3, 7, 1)));
   // корень n-й степени из числа
   print((10).rootN(2));
   // пользователи

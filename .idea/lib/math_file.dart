@@ -41,13 +41,13 @@ extension numX on num {
 
   num rootN(int n) {
     num root = this;
-    if (root < 0 || n < 0) throw ("Number must be greater than 0!");
+    if (root < 0 || n < 0) print("Number must be greater than 0!");
     try {
       for (int i = 0; i <= 20; i++) {
         root = (1 / n) * ((n - 1) * root + (this / root.stepen(n - 1)));
       }
     } catch (E) {
-      throw ("Calculation error!");
+      print("Calculation error!");
     }
     return root;
   }
